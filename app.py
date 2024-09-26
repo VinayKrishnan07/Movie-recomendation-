@@ -11,7 +11,7 @@ genai.configure(api_key=os.getenv("GOOGLE-API-KEY"))
 
 # Design the page
 headers={"authorization":st.secrets["GOOGLE-API-KEY"],"content-type":"application/json"}
-st.title("Movir Recommender Systems...")
+st.title("Movie Recommender Systems...")
 user_input = st.text_input("Enter the Movie title,genre or keyword")
 
 demo_template = '''Based on {user_input}provide Movie recommendations'''
